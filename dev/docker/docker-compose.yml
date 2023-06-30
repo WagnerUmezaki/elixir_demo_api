@@ -1,0 +1,17 @@
+version: "3.2"
+
+services:
+  database:
+    image: postgres:13
+    container_name: elixir-demo-db
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-elixir_demo:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: elixir
+      POSTGRES_USER: elixir
+      POSTGRES_PASSWORD: elixir
+
+volumes:
+  postgres-elixir_demo:
