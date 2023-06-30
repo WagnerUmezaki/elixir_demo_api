@@ -1,14 +1,37 @@
 # ElixirDemoApi
 
-To start your Phoenix server:
+## Local Setup (MacOS)
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+### Install everything
+```
+  brew update
+  brew install elixir
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  // elixir package manager
+  mix local.hex
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+  // check elixir version
+  elixir -v
+
+  // Install phoenix https://www.phoenixframework.org/
+  mix archive.install hex phx_new 1.7.6
+```
+### Docker compose
+Install docker compose to create a local database
+```
+  brew install --cask docker
+  brew install docker-compose
+```
+
+### Execute database migrations
+```
+  mix ecto.migrate
+```
+
+### Run server
+``` 
+  mix phx.server
+```
 
 ## Learn more
 

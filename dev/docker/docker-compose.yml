@@ -10,8 +10,8 @@ services:
       - postgres-elixir_demo:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: elixir
-      POSTGRES_USER: elixir
-      POSTGRES_PASSWORD: elixir
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
 
 volumes:
   postgres-elixir_demo:
