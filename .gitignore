@@ -29,3 +29,6 @@ elixir_demo_api-*.tar
 
 #MacOS
 .DS_Store
+
+#IntelliJ
+.idea
